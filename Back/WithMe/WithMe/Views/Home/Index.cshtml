@@ -1,0 +1,169 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <section style="height: 109.7vh;" class="forhero">
+        <div class="herotitle">
+            <h1 data-aos="fade-down" data-aos-duration="1500">@Model.pageintro.Title</h1>
+            <h6 data-aos="fade-up" data-aos-duration="1500">@Model.pageintro.Description</h6>
+        </div> 
+        <div class="scrolltitle">
+            <span>Scroll Down</span>
+        </div>
+        <span class="mouse">
+            <span class="mouse-wheel"></span>
+        </span>
+    </section>
+    <section class="forourstory">
+        <div class="title">
+            <h4 data-aos="fade-right" data-aos-duration="1000">@Model.ourstory.SpanText</h4>
+            <h1 data-aos="fade-right" data-aos-duration="1000">@Model.ourstory.Title</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6" data-aos="fade-right" data-aos-duration="1000">
+                    <p>
+                        @Model.ourstory.Text
+                    </p> 
+                </div>
+                <div class="col-6">
+                    <div class="rightimage" data-aos="fade-left" data-aos-duration="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forsentence">
+        <div class="container">
+            <h1 data-aos="fade-right" data-aos-duration="1000">@Model.forsentence.TopSentence</h1>
+            <h1 data-aos="fade-left" data-aos-duration="1000">@Model.forsentence.BottomSentence</h1>
+        </div>
+    </section>
+    <section class="forspecail">
+        <div class="ourspecials">
+            <div class="title">
+                <div class="title">
+                    <h4 data-aos="fade-right" data-aos-duration="1000">@foreach (var item in Model.forspeacial.Take(1))
+                    {
+                        @item.SpanText
+                    }</h4>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">@foreach (var item in Model.forspeacial.Take(1))
+                    {
+                        @item.Title
+                    }</h1>
+                </div>
+            </div>
+            <div class="specialcards">
+                <div class="firstcard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    @foreach (var item in Model.forspeacial.Take(1))
+                {
+                    @Html.Raw(item.IconURL)
+                        <h2>@item.CardTitle</h2>
+                        <p>
+                            @item.CardDescription
+                        </p>
+                }
+                </div>
+                <div class="secondcard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    @foreach (var item in Model.forspeacial.Skip(1).Take(1))
+                {
+                    @Html.Raw(item.IconURL)
+                        <h2>@item.CardTitle</h2>
+                        <p>
+                            @item.CardDescription
+                        </p>
+                }
+                </div>
+                <div class="thirdcard" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                    @foreach (var item in Model.forspeacial.Skip(2).Take(1))
+                {
+                    @Html.Raw(item.IconURL)
+                        <h2>@item.CardTitle</h2>
+                        <p>
+                            @item.CardDescription
+                        </p>
+                }
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forbetweensection">
+        <div class="container" style="padding-left: 5%; padding-right: 5%;">
+            <div class="row">
+                @foreach (var item in Model.forbetweensection)
+            {
+                <div class="col-3">
+                    <div class="counter" data-aos="fade-up" data-aos-duration="1000">
+                        <h1>@item.Count+</h1>
+                        <span>@item.SpanText</span>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>
+    <section class="homepagemenu">
+        <div class="title">
+            <h4 data-aos="fade-right" data-aos-duration="1000">Service</h4>
+            <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Our Menu</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model.homepagemenu)
+            {
+                <div class="col-4" id="card">
+                    <div class="face front"  
+                    style="background-image:
+                    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                    url(./assets/images/@item.ImageURL); 
+                    background-size: cover;">
+                        <h2>@item.Title</h2>
+                    </div>
+                    <div class="face back">
+                        <a href="./menu.html">@item.ButtonText</a>
+                    </div>
+                </div>
+            }
+            </div>
+        </div>
+    </section>
+    <section class="forbetweensection2">
+        <div class="container">
+            <h1 data-aos="fade-right" data-aos-duration="1000">@Model.forsecondbetweensection.Title</h1>
+            <h5 data-aos="fade-left" data-aos-duration="1000">@Model.forsecondbetweensection.WeekDaysTime</h5>
+            <h5 data-aos="fade-right" data-aos-duration="1000">@Model.forsecondbetweensection.WeekEndTime</h5>
+        </div>
+    </section>
+    <section class="forpartners">
+        <div class="title">
+            <h4 data-aos="fade-right" data-aos-duration="1000">@Model.forpartner.SpanText</h4>
+            <h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">@Model.forpartner.Title</h1>
+        </div>
+        <div class="partners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./assets/images/@Model.forpartner.FirstPartnerImageURl" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/@Model.forpartner.SecondPartnerImageURL" alt="" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/@Model.forpartner.ThirdPartnerImageURL" alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
+                    </div>
+                    <div class="col-3">
+                        <img src="./assets/images/@Model.forpartner.FourthPartnerImageURL" alt="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forbetweensection3">
+        <div class="container">
+            <h1 data-aos="fade-right" data-aos-duration="1000">@Model.forthirdbetweensection.TopSentence</h1>
+            <h1 data-aos="fade-left" data-aos-duration="1000">@Model.forthirdbetweensection.BottomSentence</h1>
+        </div>
+    </section>
+

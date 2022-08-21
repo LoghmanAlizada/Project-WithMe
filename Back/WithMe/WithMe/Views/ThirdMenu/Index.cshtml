@@ -1,0 +1,51 @@
+﻿@model ThirdMenuVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="titleforthirdmenu">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000">
+            <h1>Our Menu</h1>
+            <div class="container">
+                <div class="menu">
+                    <a asp-controller="Menu" asp-action="Index"><span>Second Menu</span></a>
+                </div>
+                <div class="menu">
+                    <a asp-controller="SecondMenu" asp-action="Index"><span>Third Menu</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="forthirdmenu">
+        <div class="container">
+            <div class="desserts" style="margin-top: -10rem;">
+                <div class="row">
+                    @foreach (var item in Model.dessertssectionforthirdmenu)
+                   {
+                    <div class="col-3" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="menuitem">
+                            <div class="forimage">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="forname">
+                                <span>@item.Name</span>
+                            </div>
+                            <div class="forcost">
+                                <span>$@item.Price.00</span>
+                            </div>
+                            <div class="foraddcart">
+                                <div class="addtocard">
+                                    <a style="text-decoration: none;" asp-controller="basket" asp-action="addbasket" asp-route-id="@item.Id">
+                                        <span>add to card</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   }
+                </div>
+            </div>
+        </div>
+    </section>
+

@@ -1,0 +1,36 @@
+﻿@model List<ChefPage>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="forchefs">
+        <div class="container">
+            <div class="title" data-aos="fade-down" data-aos-duration="1500">
+                <h1>
+                    @foreach (var item in Model)
+                   {
+                       @item.SectionTitle
+                   }
+                </h1>
+            </div>
+            <div class="chefsimage">
+                <div class="firstchef" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="">
+                </div>
+                <div class="secondchef" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                </div>
+                <div class="thirdchef" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                </div>
+            </div>
+            <div class="chefsname">
+                @foreach (var item in Model)
+            {
+                <div class="firstchefname">
+                    <h2>@item.Name</h2>
+                    <h6>@item.Position</h6>
+                </div>
+            }
+            </div>
+        </div>
+    </section>
+

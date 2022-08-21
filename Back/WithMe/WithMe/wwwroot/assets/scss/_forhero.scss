@@ -1,0 +1,72 @@
+.forhero{
+    background-image: linear-gradient(to bottom, transparent 70%, black), url(../images/SINGLE-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 840px;
+    .herotitle{
+        text-align: center;
+        padding-top: 350px;
+        h1{
+            font-family: 'Poiret One', cursive;
+            color: white;
+            font-size: 60px;
+            letter-spacing: 2px;
+        }
+        h6{
+            font-family: 'Poiret One', cursive;
+            color: yellow;
+            font-size: 25px;
+            letter-spacing: 2px;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid yellow;
+                width: 5rem;
+                margin: -.5rem 1rem;
+                transform: translateY(-1rem);
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid yellow;
+                width: 5rem;
+                margin: -.5rem 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
+    .scrolltitle{
+        margin-top: 19rem;
+        text-align: center;
+        span{
+            color: orange;
+        }
+    }
+    .mouse{
+        width: 20px;
+        height: 45px;
+        border: 2px solid orange;
+        border-radius: 20px;
+        display: flex;
+        margin: auto;
+        .mouse-wheel{
+            display: block;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background-color: orange;
+            margin: auto;
+            animation: move-wheel 1.5s linear infinite;
+        }
+        @keyframes move-wheel {
+            0%{
+                opacity: 0%;
+                transform: translateY(-.8rem);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(.8rem);
+            }
+        }
+    }
+}

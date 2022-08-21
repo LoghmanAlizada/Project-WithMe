@@ -1,0 +1,46 @@
+﻿@model IEnumerable<DessertsSectionForThirdMenu>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a class="btn btn-dark btn-rounded btn-fw" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go Back</a>
+<br />
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Desserts</h4>
+            <a class="btn btn-primary btn-rounded btn-fw" asp-area="Admin" asp-controller="Desserts" asp-action="Create">Create</a>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                       {
+                           <tr>
+                            <td><img src="~/assets/images/@item.ImageURL" style="width:100px; height:100px;"/></td>
+                            <td>@item.Name</td>
+                            <td>@item.Price</td>
+                            <td>
+                                <a class="btn btn-success btn-icon-text" asp-area="Admin" asp-controller="Desserts" asp-action="Update" asp-route-id="@item.Id">Edit</a>
+                                <a class="btn btn-danger btn-icon-text" asp-area="Admin" asp-controller="Desserts" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                            </td>
+                        </tr>
+                       }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

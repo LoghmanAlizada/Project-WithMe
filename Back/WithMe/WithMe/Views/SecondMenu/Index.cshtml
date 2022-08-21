@@ -1,0 +1,214 @@
+﻿@model SecondMenuVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <section class="fortitle">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000">
+            <h1>@Model.titlesectionforsecondmenupage.Title</h1>
+            <div class="container">
+                <div class="menu">
+                    <a asp-controller="ThirdMenu" asp-action="Index"><span>First Menu</span></a>
+                </div>
+                <div class="menu">
+                    <a asp-controller="Menu" asp-action="Index"><span>Second Menu</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="formenu">
+        <div class="menu">
+            <div class="title" data-aos="fade-in" data-aos-duration="1000">
+                <h1>
+                    @foreach (var item in Model.maincoursessectionforsecondmenu.Take(1))
+                {
+                    @item.SectionTitle
+                }
+                </h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="leftcol">
+                        @foreach (var item in Model.maincoursessectionforsecondmenu.Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                    <div class="col-6" id="rightcol">
+                        @foreach (var item in Model.maincoursessectionforsecondmenu.Skip(3).Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu2">
+            <div class="title" data-aos="fade-in" data-aos-duration="1000">
+                <h1>
+                    @foreach (var item in Model.dessertssectionforsecondmenu.Take(1))
+                {
+                    @item.SectionTitle
+                }
+                </h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="leftcol">
+                        @foreach (var item in Model.dessertssectionforsecondmenu.Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                    <div class="col-6" id="rightcol">
+                        @foreach (var item in Model.dessertssectionforsecondmenu.Skip(3).Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu3">
+            <div class="title" data-aos="fade-in" data-aos-duration="1000">
+                <h1>
+                    @foreach (var item in Model.drinkssectionforsecondmenu)
+                   {
+                       @item.SectionTitle
+                   }
+                </h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="leftcol">
+                        @foreach (var item in Model.drinkssectionforsecondmenu.Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                    <div class="col-6" id="rightcol">
+                        @foreach (var item in Model.drinkssectionforsecondmenu.Skip(3).Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu4">
+            <div class="title" data-aos="fade-in" data-aos-duration="1000">
+                <h1>
+                    @foreach (var item in Model.coffeessectionforsecondmenu.Take(1))
+                   {
+                       @item.SectionTitle
+                   }
+                </h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" id="leftcol">
+                        @foreach (var item in Model.coffeessectionforsecondmenu.Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                    <div class="col-6" id="rightcol">
+                        @foreach (var item in Model.coffeessectionforsecondmenu.Skip(3).Take(3))
+                    {
+                        <div class="firstline">
+                            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                                <img src="./assets/images/@item.ImageURL" alt="">
+                            </div>
+                            <div class="name" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+                                <h3>@item.Name</h3>
+                                <h5>@item.Description</h5>
+                            </div>
+                            <div class="price" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                                <span>@item.Price$</span>
+                            </div>
+                        </div>
+                    }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+

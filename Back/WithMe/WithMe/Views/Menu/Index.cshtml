@@ -1,0 +1,174 @@
+﻿@model MenuVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <section class="fortitle">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000">
+            <h1>@Model.titlesectionformenupage.Title</h1>
+            <div class="container">
+                <div class="menu">
+                    <a asp-controller="Menu" asp-action="Index"><span>First Menu</span></a>
+                </div>
+                <div class="menu">
+                    <a asp-controller="SecondMenu" asp-action="Index"><span>Third Menu</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="formenu">
+        <div class="firstmenu">
+            <div class="container">
+                <div class="title" data-aos="fade-in" data-aos-duration="1000">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">
+                        @foreach (var item in Model.maincoursessectionformenupage.Take(1))
+                    {
+                        @item.Title
+                    }
+                    </h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="leftcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            @foreach (var item in Model.maincoursessectionformenupage.Take(8))
+                        {
+                           <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="rightcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"  style="padding-left: 2rem;">
+                            @foreach (var item in Model.maincoursessectionformenupage.Skip(8).Take(8))
+                        {
+                           <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="firstmenu">
+            <div class="container">
+                <div class="title" data-aos="fade-in" data-aos-duration="1000" style="background-image:   
+                linear-gradient(
+                    rgba(0, 0, 0, 0.4), 
+                    rgba(0, 0, 0, 0.4)
+                  ),  url(./assets/images/drinkbackground.jpg);">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">
+                        @foreach (var item in Model.drinkssectionformenupages.Take(1))
+                    {
+                        @item.Title
+                    }
+                    </h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="leftcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            @foreach (var item in Model.drinkssectionformenupages.Take(8))
+                        {
+                            <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="rightcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"  style="padding-left: 2rem;">
+                            @foreach (var item in Model.drinkssectionformenupages.Skip(8).Take(8))
+                        {
+                            <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="firstmenu">
+            <div class="container">
+                <div class="title" data-aos="fade-in" data-aos-duration="1000" style="background-image:
+                linear-gradient(
+                rgba(0, 0, 0, 0.4), 
+                rgba(0, 0, 0, 0.4)
+              ),  url(./assets/images/dessertback.jpg);">
+                    <h1 data-aos="fade-down" data-aos-duration="1000">
+                        @foreach (var item in Model.dessertsectionformenupages.Take(1))
+                    {
+                        @item.Title
+                    }
+                    </h1>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="leftcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                            @foreach (var item in Model.dessertsectionformenupages.Take(8))
+                        {
+                            <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="rightcol" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"  style="padding-left: 2rem;">
+                            @foreach (var item in Model.dessertsectionformenupages.Skip(8).Take(8))
+                        {
+                            <div class="menuitem">
+                                <div class="menu-header">
+                                    <div class="menu-title">
+                                        <h5>@item.Name</h5>
+                                    </div>
+                                    <span>$@item.Price</span>
+                                </div>
+                                <p>@item.Description</p>
+                            </div>
+                        }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+

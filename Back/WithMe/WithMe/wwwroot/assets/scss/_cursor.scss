@@ -1,0 +1,19 @@
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    padding-top: 11px;
+    .point{
+        margin: auto;
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}

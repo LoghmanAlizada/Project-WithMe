@@ -1,0 +1,30 @@
+﻿@model ForSpecial
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form class="forms-sample" method="post">
+    <div class="form-group">
+        <label asp-for="IconURL">Icon URL</label>
+        <input asp-for="IconURL" class="form-control">
+        <span asp-validation-for="IconURL" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CardTitle">Card Title</label>
+        <input asp-for="CardTitle" class="form-control" >
+        <span asp-validation-for="CardTitle" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CardDescription">Card Description</label>
+        <input asp-for="CardDescription" class="form-control" >
+        <span asp-validation-for="CardDescription" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success mr-2">Submit</button>
+</form>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

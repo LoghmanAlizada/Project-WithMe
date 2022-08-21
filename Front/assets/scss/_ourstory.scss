@@ -1,0 +1,49 @@
+.forourstory{
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background-image: url(../images/section-bg-6-large-4.jpg);
+    background-size: cover;
+    border-bottom: 1px solid orange;
+    border-top: 1px solid orange;
+    .title{
+        h4{
+            font-family: 'Poiret One', cursive;
+            color: orange;
+            letter-spacing: 1px;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 16rem;
+                margin: -.5rem 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+        h1{
+            color: orange;
+            font-family: 'Poiret One', cursive;
+            font-size: 50px;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid transparent;
+                width: 16rem;
+                margin: -.5rem 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
+    p{
+        margin-top: 20px;
+        color: white;
+        font-family: 'Poiret One', cursive;
+        letter-spacing: 1px;
+        text-align: right;
+    }
+    .rightimage{
+        background-image: url(../images/heroback.jpg);
+        height: 400px;
+        background-size: cover;
+        margin-top: -5rem;
+    }
+}

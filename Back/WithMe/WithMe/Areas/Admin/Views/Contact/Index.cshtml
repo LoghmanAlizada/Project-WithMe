@@ -1,0 +1,41 @@
+﻿@model ContactPage
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a class="btn btn-dark btn-rounded btn-fw" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go Back</a>
+<br />
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Contact Page</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Location</th>
+                            <th>Mail</th>
+                            <th>Week Time</th>
+                            <th>WeekEnd Time</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.Location</td>
+                            <td>@Model.Mail</td>
+                            <td>@Model.WeekTime</td>
+                            <td>@Model.WeekendTime</td>
+                            <td>
+                                <a class="btn btn-success btn-icon-text" asp-area="Admin" asp-controller="Contact" asp-action="Update">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

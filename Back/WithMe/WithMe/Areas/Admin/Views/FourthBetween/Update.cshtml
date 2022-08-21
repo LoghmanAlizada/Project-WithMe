@@ -1,0 +1,25 @@
+﻿@model ForThirdBetweenSection
+
+@{
+    ViewData["Title"] = "Update";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<form class="forms-sample" method="post">
+    <div class="form-group">
+        <label asp-for="TopSentence">Top Sentence</label>
+        <input asp-for="TopSentence" class="form-control">
+        <span asp-validation-for="TopSentence" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="BottomSentence">Bottom Sentence</label>
+        <input asp-for="BottomSentence" class="form-control" >
+        <span asp-validation-for="BottomSentence" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-success mr-2">Submit</button>
+</form>
+
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

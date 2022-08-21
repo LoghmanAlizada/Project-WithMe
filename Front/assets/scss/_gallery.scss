@@ -1,0 +1,86 @@
+.gallery{
+    text-align: center;
+    padding-top: 12rem;
+    .title{
+        height: 300px;
+        margin-bottom: -10rem;
+        h1{
+            font-size: 60px;
+            color: orange;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
+    #images{
+        padding-bottom: 5%;
+        #image{
+            margin-top: 1rem;
+            .photo{
+                height: 300px;
+                overflow: hidden; 
+                &:hover{
+                    img{
+                        transition-duration: 1s;
+                        transform: scale(1.2);
+                    }
+                    .shadow{
+                        display: block;
+                        transition-duration: 1s;
+                    }
+                    .shadow{
+                        display: block;
+                        transition-duration: 1s;
+                    }
+                }
+            }
+            img{
+                max-width: 100%;
+                background-position: center;
+                background-size: cover;
+                transition: all 1s;
+            }
+            .shadow{
+                width: 100%;
+                height: 310px;
+                background: linear-gradient(
+                    rgba(0, 0, 0, 0.6), 
+                    rgba(0, 0, 0, 0.6)
+                  );
+                  top: -310px;
+                  position: relative;
+                  display: none;
+                  padding-top: 8rem;
+                  transition: all 1s;
+                  a{
+                    text-decoration: none;
+                    &:hover{
+                        span{
+                            color: orange;
+                            transition-duration: .5s;
+                            border: 1px solid orange;
+                            padding: .3rem;
+                        }
+                    }
+                    span{
+                        color: white;
+                        font-size: 30px;
+                      }
+                  }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.fortitle{
+    text-align: center;
+    padding-top: 12%;
+    margin-bottom: 5%;
+    .title{
+        height: 300px ;
+        h1{
+            font-size: 60px;
+            color: orange;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+        .menu{
+            border: 1px solid orange;
+            width: 10%;
+            margin-bottom: 10px;
+            &:hover{
+                background-color: orange;
+                transition-duration: 1s;
+                span{
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+            a{
+                text-decoration: none;
+                span{
+                    color: orange;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.formenu{
+    margin-top: -18rem;
+    .firstmenu{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .title{
+            margin: auto;
+            height: 10rem;
+            text-align: center;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.4), 
+                rgba(0, 0, 0, 0.4)
+              ), url(../images/mealback.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin-bottom: 2rem;
+            padding-top: 2rem;
+            h1{
+                font-size: 80px;
+                letter-spacing: 5px;
+                color: orange;
+                font-weight: bold;
+                font-family: 'Cookie', cursive;
+            }
+        }
+        .menuitem{
+            .menu-header{
+                display: flex;
+                justify-content: space-between;
+                .menu-title{
+                    display: inline-block;
+                    h5{
+                        color: orange;
+                        font-weight: 500;
+                        font-family: 'Jost', sans-serif;
+                    }
+                }
+                span{
+                    color: orange;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: 'Jost', sans-serif;
+                }
+            }
+            p{
+                color: white;
+                font-size: 17px;
+                margin-top: -.5rem;
+            }
+        }
+    }
+}

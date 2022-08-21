@@ -1,0 +1,503 @@
+.formenu{
+    margin-top: -15rem;
+    .menu{
+        margin: auto;
+        width: 100%;
+        height: 600px;
+        .title{
+            margin: auto;
+            width: 15rem;
+            padding: 5px;
+            text-align: center;
+            background-color: orange;
+            h1{
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+            }
+            .menu{
+                border: 1px solid orange;
+                width: 10%;
+                margin-bottom: 10px;
+                &:hover{
+                    background-color: orange;
+                    transition-duration: 1s;
+                    span{
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    span{
+                        color: orange;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        #leftcol{
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }   
+        }
+        #rightcol{
+            padding-left: 5rem;
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .menu2{
+        margin: auto;
+        width: 100%;
+        height: 600px;
+        .title{
+            margin: auto;
+            width: 15rem;
+            padding: 5px;
+            text-align: center;
+            background-color: orange;
+            h1{
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        #leftcol{
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }   
+        }
+        #rightcol{
+            padding-left: 5rem;
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .menu3{
+        margin: auto;
+        width: 100%;
+        height: 600px;
+        .title{
+            margin: auto;
+            width: 15rem;
+            padding: 5px;
+            text-align: center;
+            background-color: orange;
+            h1{
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        #leftcol{
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }   
+        }
+        #rightcol{
+            padding-left: 5rem;
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .betweenimage{
+        height: 300px;
+        // background-image: url(../images/drinkbackground.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        border-top: 1px solid orange;
+        border-bottom: 1px solid orange;
+    }
+    .menu4{
+        margin: auto;
+        width: 100%;
+        height: 600px;
+        .title{
+            margin: auto;
+            width: 15rem;
+            padding: 5px;
+            text-align: center;
+            background-color: orange;
+            h1{
+                font-size: 30px;
+                color: black;
+                font-weight: bold;
+            }
+        }
+        #leftcol{
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }   
+        }
+        #rightcol{
+            padding-left: 5rem;
+            div{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .image{
+                        img{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+                div{
+                    display: inline-block;
+                    margin-left: 50px;
+                }
+                .image{
+                    border: 2px solid orange;
+                    border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
+                    overflow: hidden;
+                    background-position: center;
+                    background-size: cover;
+                    img{
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 50%;
+                        transition: all 1s;
+                    }
+                }
+                .name{
+                    color: orange;
+                    text-align: start;
+                    width: 180px;
+                    
+                    h3{
+                        
+                        letter-spacing: 1px;
+                    }
+                }
+                .price{
+                    color: white;
+                    span{
+                        font-size: 25px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

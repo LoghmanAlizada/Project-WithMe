@@ -1,0 +1,1542 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
+}
+
+nav {
+  margin-bottom: -10rem;
+  width: 100%;
+  height: 80px;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  color: white;
+  font-size: 35px;
+  border: 1px solid orange;
+  height: 52px;
+  width: 10vw;
+  text-align: center;
+}
+nav .logo a {
+  font-size: 2.3vw;
+  text-decoration: none;
+  color: white;
+  font-family: "Poiret One", cursive;
+}
+nav ul {
+  float: right;
+  padding-top: 11px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 50px;
+}
+nav ul li a {
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  font-family: "Poiret One", cursive;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  transform-origin: bottom right;
+  transition: transform 0.2s ease-out;
+}
+nav ul li a:hover {
+  color: orange;
+  transition-duration: 0.2s;
+}
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@media screen and (max-width: 1200px) {
+  nav ul {
+    display: none;
+  }
+}
+
+.forhero {
+  background-image: linear-gradient(to bottom, transparent 70%, black), url(../images/SINGLE-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 840px;
+}
+.forhero .herotitle {
+  text-align: center;
+  padding-top: 350px;
+}
+.forhero .herotitle h1 {
+  font-family: "Poiret One", cursive;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.forhero .herotitle h6 {
+  font-family: "Poiret One", cursive;
+  color: yellow;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.forhero .herotitle h6:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid yellow;
+  width: 5rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forhero .herotitle h6:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid yellow;
+  width: 5rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forhero .scrolltitle {
+  margin-top: 19rem;
+  text-align: center;
+}
+.forhero .scrolltitle span {
+  color: orange;
+}
+.forhero .mouse {
+  width: 20px;
+  height: 45px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  display: flex;
+  margin: auto;
+}
+.forhero .mouse .mouse-wheel {
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: orange;
+  margin: auto;
+  -webkit-animation: move-wheel 1.5s linear infinite;
+          animation: move-wheel 1.5s linear infinite;
+}
+@-webkit-keyframes move-wheel {
+  0% {
+    opacity: 0%;
+    transform: translateY(-0.8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0.8rem);
+  }
+}
+@keyframes move-wheel {
+  0% {
+    opacity: 0%;
+    transform: translateY(-0.8rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0.8rem);
+  }
+}
+
+.forourstory {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+  border-bottom: 1px solid orange;
+  border-top: 1px solid orange;
+}
+.forourstory .title h4 {
+  font-family: "Poiret One", cursive;
+  color: orange;
+  letter-spacing: 1px;
+}
+.forourstory .title h4:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forourstory .title h1 {
+  color: orange;
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+}
+.forourstory .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid transparent;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forourstory p {
+  margin-top: 20px;
+  color: white;
+  font-family: "Poiret One", cursive;
+  letter-spacing: 1px;
+  text-align: right;
+}
+.forourstory .rightimage {
+  background-image: url(../images/heroback.jpg);
+  height: 400px;
+  background-size: cover;
+  margin-top: -5rem;
+}
+
+.forsentence {
+  background-image: url(../images/landing-img-1.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  padding-top: 80px;
+}
+.forsentence h1 {
+  color: orange;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.forchefs {
+  height: 760px;
+  text-align: center;
+  padding-top: 12%;
+  margin-bottom: 10%;
+}
+.forchefs .title {
+  height: 300px;
+}
+.forchefs .title h1 {
+  font-size: 60px;
+  color: orange;
+}
+.forchefs .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.forchefs .title h1:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.forchefs .chefsimage {
+  margin-top: -14%;
+}
+.forchefs .chefsimage .firstchef {
+  width: 27%;
+  height: 440px;
+  border: 1px solid orange;
+  display: inline-block;
+  background-image: url(../images/chef.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.forchefs .chefsimage .secondchef {
+  width: 27%;
+  height: 440px;
+  border: 1px solid orange;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-image: url(../images/cheff.jpg);
+  background-size: cover;
+}
+.forchefs .chefsimage .thirdchef {
+  width: 27%;
+  height: 440px;
+  border: 1px solid orange;
+  display: inline-block;
+  background-image: url(../images/chef1.jpg);
+  background-size: cover;
+}
+.forchefs .chefsname {
+  margin-top: 1%;
+}
+.forchefs .chefsname h2 {
+  color: white;
+}
+.forchefs .chefsname h6 {
+  color: orange;
+  font-size: 25px;
+}
+.forchefs .chefsname .firstchefname {
+  width: 32%;
+  display: inline-block;
+}
+.forchefs .chefsname .secondchefname {
+  width: 32%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: inline-block;
+}
+.forchefs .chefsname .thirdchefname {
+  width: 32%;
+  display: inline-block;
+}
+
+.forspecail {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+.forspecail .ourspecials .title h4 {
+  font-family: "Poiret One", cursive;
+  color: orange;
+  letter-spacing: 1px;
+}
+.forspecail .ourspecials .title h4:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forspecail .ourspecials .title h1 {
+  color: orange;
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+}
+.forspecail .ourspecials .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid transparent;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forspecail .ourspecials .specialcards {
+  text-align: center;
+  padding-top: 5rem;
+}
+.forspecail .ourspecials .specialcards a {
+  text-decoration: none;
+}
+.forspecail .ourspecials .specialcards .firstcard {
+  width: 18%;
+  height: 350px;
+  border: 1px solid orange;
+  display: inline-block;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 1.5s;
+}
+.forspecail .ourspecials .specialcards .firstcard i {
+  color: orange;
+  font-size: 70px;
+  margin-bottom: 30px;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .firstcard h2 {
+  color: white;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .firstcard p {
+  color: orange;
+  font-size: 18px;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .secondcard {
+  width: 18%;
+  height: 350px;
+  border: 1px solid orange;
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 1.5s;
+}
+.forspecail .ourspecials .specialcards .secondcard i {
+  color: orange;
+  font-size: 70px;
+  margin-bottom: 30px;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .secondcard h2 {
+  color: white;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .secondcard p {
+  color: orange;
+  font-size: 18px;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .thirdcard {
+  width: 18%;
+  height: 350px;
+  border: 1px solid orange;
+  display: inline-block;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 1.5s;
+}
+.forspecail .ourspecials .specialcards .thirdcard i {
+  color: orange;
+  font-size: 70px;
+  margin-bottom: 30px;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .thirdcard h2 {
+  color: white;
+  transition: all 1s;
+}
+.forspecail .ourspecials .specialcards .thirdcard p {
+  color: orange;
+  font-size: 18px;
+  transition: all 1s;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 1px solid orange;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+  -webkit-animation: cursorAnim 0.5s infinite alternate;
+          animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  padding-top: 11px;
+}
+.cursor .point {
+  margin: auto;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fortitle {
+  text-align: center;
+  padding-top: 12%;
+  margin-bottom: 5%;
+}
+.fortitle .title {
+  height: 300px;
+}
+.fortitle .title h1 {
+  font-size: 60px;
+  color: orange;
+}
+.fortitle .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.fortitle .title h1:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.fortitle .title .menu {
+  border: 1px solid orange;
+  width: 10%;
+  margin-bottom: 10px;
+}
+.fortitle .title .menu:hover {
+  background-color: orange;
+  transition-duration: 1s;
+}
+.fortitle .title .menu:hover span {
+  color: black;
+  font-weight: 600;
+}
+.fortitle .title .menu a {
+  text-decoration: none;
+}
+.fortitle .title .menu a span {
+  color: orange;
+  font-size: 20px;
+}
+
+.formenu {
+  margin-top: -18rem;
+}
+.formenu .firstmenu {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.formenu .firstmenu .title {
+  margin: auto;
+  height: 10rem;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/mealback.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+.formenu .firstmenu .title h1 {
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: orange;
+  font-weight: bold;
+  font-family: "Cookie", cursive;
+}
+.formenu .firstmenu .menuitem .menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+.formenu .firstmenu .menuitem .menu-header .menu-title {
+  display: inline-block;
+}
+.formenu .firstmenu .menuitem .menu-header .menu-title h5 {
+  color: orange;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.formenu .firstmenu .menuitem .menu-header span {
+  color: orange;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.formenu .firstmenu .menuitem p {
+  color: white;
+  font-size: 17px;
+  margin-top: -0.5rem;
+}
+
+.forbetweensection {
+  background-image: url(../images/landing-img-16.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  padding-top: 8%;
+}
+.forbetweensection .counter {
+  border-left: 1px solid orange;
+  border-right: 1px solid orange;
+}
+.forbetweensection .counter h1 {
+  color: orange;
+  font-weight: bold;
+}
+.forbetweensection .counter span {
+  color: orange;
+  font-size: 2rem;
+}
+
+.homepagemenu {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+  border-bottom: 1px solid orange;
+  border-top: 1px solid orange;
+}
+.homepagemenu .title h4 {
+  font-family: "Poiret One", cursive;
+  color: orange;
+  letter-spacing: 1px;
+}
+.homepagemenu .title h4:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.homepagemenu .title h1 {
+  color: orange;
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+}
+.homepagemenu .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid transparent;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.homepagemenu #card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+  margin: auto;
+  margin-top: 3rem;
+}
+.homepagemenu #card:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+.homepagemenu #card:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+.homepagemenu #card .face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transition: 1.3s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+}
+.homepagemenu #card .face.front {
+  color: orange;
+  border: 1px solid orange;
+}
+.homepagemenu #card .face.front h2 {
+  transform: perspective(500px) translateZ(70px);
+  font-family: "The Nautigal", cursive;
+  font-size: 40px;
+}
+.homepagemenu #card .face.back {
+  transform: perspective(500px) rotateY(180deg);
+  border: 1px solid orange;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+}
+.homepagemenu #card .face.back a {
+  color: white;
+  text-decoration: none;
+  transform: perspective(500px) translateZ(50px);
+  font-size: 20px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  padding: 0.3rem;
+}
+.homepagemenu #card .face.back a:hover {
+  color: orange;
+  border: 1px solid orange;
+}
+
+.forbetweensection2 {
+  background-image: url(../images/home-8-beckround-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  padding-top: 80px;
+}
+.forbetweensection2 h1 {
+  color: orange;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.forbetweensection2 h5 {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: black;
+}
+
+.forcontact {
+  text-align: center;
+  padding-top: 12%;
+  margin-bottom: 8%;
+}
+.forcontact .title {
+  height: 300px;
+  margin-bottom: -10rem;
+}
+.forcontact .title h1 {
+  font-size: 60px;
+  color: orange;
+}
+.forcontact .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.forcontact .title h1:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.forcontact .leftdiv {
+  height: 600px;
+  border: 1px solid orange;
+  background-color: black;
+}
+.forcontact .leftdiv h1 {
+  margin-top: 3rem;
+  color: orange;
+}
+.forcontact .leftdiv span {
+  display: block;
+  color: white;
+  font-size: 18px;
+}
+.forcontact .leftdiv a {
+  display: block;
+  text-decoration: none;
+  color: orange;
+  letter-spacing: 2px;
+  margin-top: 1rem;
+}
+.forcontact .leftdiv a:hover {
+  top: -5px;
+  color: white;
+}
+.forcontact .rightdiv {
+  height: 600px;
+}
+.forcontact .rightdiv iframe {
+  height: 600px;
+  width: 100%;
+  filter: grayscale(100%) invert(100%);
+}
+
+.gallery {
+  text-align: center;
+  padding-top: 12rem;
+}
+.gallery .title {
+  height: 300px;
+  margin-bottom: -10rem;
+}
+.gallery .title h1 {
+  font-size: 60px;
+  color: orange;
+}
+.gallery .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.gallery .title h1:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.gallery #images {
+  padding-bottom: 5%;
+}
+.gallery #images #image {
+  margin-top: 1rem;
+}
+.gallery #images #image .photo {
+  height: 300px;
+  overflow: hidden;
+}
+.gallery #images #image .photo:hover img {
+  transition-duration: 1s;
+  transform: scale(1.2);
+}
+.gallery #images #image .photo:hover .shadow {
+  display: block;
+  transition-duration: 1s;
+}
+.gallery #images #image .photo:hover .shadow {
+  display: block;
+  transition-duration: 1s;
+}
+.gallery #images #image img {
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s;
+}
+.gallery #images #image .shadow {
+  width: 100%;
+  height: 310px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  top: -310px;
+  position: relative;
+  display: none;
+  padding-top: 8rem;
+  transition: all 1s;
+}
+.gallery #images #image .shadow a {
+  text-decoration: none;
+}
+.gallery #images #image .shadow a:hover span {
+  color: orange;
+  transition-duration: 0.5s;
+  border: 1px solid orange;
+  padding: 0.3rem;
+}
+.gallery #images #image .shadow a span {
+  color: white;
+  font-size: 30px;
+}
+
+.forpartners {
+  height: 600px;
+  padding-top: 150px;
+  padding-bottom: 120px;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+.forpartners .title h4 {
+  font-family: "Poiret One", cursive;
+  color: orange;
+  letter-spacing: 1px;
+}
+.forpartners .title h4:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forpartners .title h1 {
+  color: orange;
+  font-family: "Poiret One", cursive;
+  font-size: 50px;
+}
+.forpartners .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid transparent;
+  width: 16rem;
+  margin: -0.5rem 1rem;
+  transform: translateY(-1rem);
+}
+.forpartners .partners {
+  margin-top: 6rem;
+}
+.forpartners .partners img {
+  max-width: 60%;
+  color: orange;
+}
+
+.forbetweensection3 {
+  background-image: url(../images/bar-home-rev-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  padding-top: 80px;
+}
+.forbetweensection3 h1 {
+  color: orange;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.formenu {
+  margin-top: -15rem;
+}
+.formenu .menu {
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+.formenu .menu .title {
+  margin: auto;
+  width: 15rem;
+  padding: 5px;
+  text-align: center;
+  background-color: orange;
+}
+.formenu .menu .title h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.formenu .menu .title .menu {
+  border: 1px solid orange;
+  width: 10%;
+  margin-bottom: 10px;
+}
+.formenu .menu .title .menu:hover {
+  background-color: orange;
+  transition-duration: 1s;
+}
+.formenu .menu .title .menu:hover span {
+  color: black;
+  font-weight: 600;
+}
+.formenu .menu .title .menu a {
+  text-decoration: none;
+}
+.formenu .menu .title .menu a span {
+  color: orange;
+  font-size: 20px;
+}
+.formenu .menu #leftcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu #leftcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu #leftcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu #leftcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu #leftcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu #leftcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu #leftcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu #leftcol div .price {
+  color: white;
+}
+.formenu .menu #leftcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu #rightcol {
+  padding-left: 5rem;
+}
+.formenu .menu #rightcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu #rightcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu #rightcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu #rightcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu #rightcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu #rightcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu #rightcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu #rightcol div .price {
+  color: white;
+}
+.formenu .menu #rightcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu2 {
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+.formenu .menu2 .title {
+  margin: auto;
+  width: 15rem;
+  padding: 5px;
+  text-align: center;
+  background-color: orange;
+}
+.formenu .menu2 .title h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.formenu .menu2 #leftcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu2 #leftcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu2 #leftcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu2 #leftcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu2 #leftcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu2 #leftcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu2 #leftcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu2 #leftcol div .price {
+  color: white;
+}
+.formenu .menu2 #leftcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu2 #rightcol {
+  padding-left: 5rem;
+}
+.formenu .menu2 #rightcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu2 #rightcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu2 #rightcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu2 #rightcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu2 #rightcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu2 #rightcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu2 #rightcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu2 #rightcol div .price {
+  color: white;
+}
+.formenu .menu2 #rightcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu3 {
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+.formenu .menu3 .title {
+  margin: auto;
+  width: 15rem;
+  padding: 5px;
+  text-align: center;
+  background-color: orange;
+}
+.formenu .menu3 .title h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.formenu .menu3 #leftcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.formenu .menu3 #leftcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu3 #leftcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu3 #leftcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu3 #leftcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu3 #leftcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu3 #leftcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu3 #leftcol div .price {
+  color: white;
+}
+.formenu .menu3 #leftcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu3 #rightcol {
+  padding-left: 5rem;
+}
+.formenu .menu3 #rightcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu3 #rightcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu3 #rightcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu3 #rightcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu3 #rightcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu3 #rightcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu3 #rightcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu3 #rightcol div .price {
+  color: white;
+}
+.formenu .menu3 #rightcol div .price span {
+  font-size: 25px;
+}
+.formenu .betweenimage {
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+}
+.formenu .menu4 {
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+.formenu .menu4 .title {
+  margin: auto;
+  width: 15rem;
+  padding: 5px;
+  text-align: center;
+  background-color: orange;
+}
+.formenu .menu4 .title h1 {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+.formenu .menu4 #leftcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu4 #leftcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu4 #leftcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu4 #leftcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu4 #leftcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu4 #leftcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu4 #leftcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu4 #leftcol div .price {
+  color: white;
+}
+.formenu .menu4 #leftcol div .price span {
+  font-size: 25px;
+}
+.formenu .menu4 #rightcol {
+  padding-left: 5rem;
+}
+.formenu .menu4 #rightcol div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.formenu .menu4 #rightcol div:hover .image img {
+  transform: scale(1.2);
+}
+.formenu .menu4 #rightcol div div {
+  display: inline-block;
+  margin-left: 50px;
+}
+.formenu .menu4 #rightcol div .image {
+  border: 2px solid orange;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.formenu .menu4 #rightcol div .image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.formenu .menu4 #rightcol div .name {
+  color: orange;
+  text-align: start;
+  width: 180px;
+}
+.formenu .menu4 #rightcol div .name h3 {
+  letter-spacing: 1px;
+}
+.formenu .menu4 #rightcol div .price {
+  color: white;
+}
+.formenu .menu4 #rightcol div .price span {
+  font-size: 25px;
+}
+
+.titleforthirdmenu {
+  text-align: center;
+  padding-top: 12%;
+  margin-bottom: 5%;
+}
+.titleforthirdmenu .title {
+  height: 300px;
+}
+.titleforthirdmenu .title h1 {
+  font-size: 60px;
+  color: orange;
+}
+.titleforthirdmenu .title h1:before {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.titleforthirdmenu .title h1:after {
+  display: inline-block;
+  content: "";
+  border-top: 0.01rem solid orange;
+  width: 12rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+}
+.titleforthirdmenu .title .menu {
+  border: 1px solid orange;
+  width: 10%;
+  margin-bottom: 10px;
+}
+.titleforthirdmenu .title .menu:hover {
+  background-color: orange;
+  transition-duration: 1s;
+}
+.titleforthirdmenu .title .menu:hover span {
+  color: black;
+  font-weight: 600;
+}
+.titleforthirdmenu .title .menu a {
+  text-decoration: none;
+}
+.titleforthirdmenu .title .menu a span {
+  color: orange;
+  font-size: 20px;
+}
+
+.forthirdmenu .maincourse {
+  margin-top: -10rem;
+}
+.forthirdmenu .desserts {
+  margin-top: 10rem;
+}
+.forthirdmenu .drinks {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+.forthirdmenu .title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.forthirdmenu .title h1 {
+  color: black;
+  font-weight: 600;
+  width: 20%;
+  border: 1px solid orange;
+  background-color: orange;
+}
+.forthirdmenu .menuitem {
+  height: 426px;
+  border-bottom: 1px solid white;
+  margin-top: 3rem;
+}
+.forthirdmenu .menuitem:hover {
+  border-bottom: 1px solid orange;
+}
+.forthirdmenu .menuitem:hover .forimage img {
+  transform: scale(1.2);
+  transition: all 1s;
+}
+.forthirdmenu .menuitem .forimage {
+  height: 254px;
+  width: 254px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+}
+.forthirdmenu .menuitem .forimage img {
+  max-width: 100%;
+  transition: all 1s;
+  border-radius: 50%;
+}
+.forthirdmenu .menuitem .forname {
+  width: 304px;
+  height: 40px;
+  text-align: center;
+}
+.forthirdmenu .menuitem .forname span {
+  font-size: 25px;
+  color: orange;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.forthirdmenu .menuitem .forcost {
+  width: 304px;
+  height: 40px;
+  text-align: center;
+}
+.forthirdmenu .menuitem .forcost span {
+  font-size: 20px;
+  color: white;
+}
+.forthirdmenu .menuitem .foraddcart {
+  width: 304px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.forthirdmenu .menuitem .foraddcart .addtocard {
+  border: 1px solid orange;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.forthirdmenu .menuitem .foraddcart .addtocard span {
+  color: white;
+  font-size: 20px;
+}
+.forthirdmenu .menuitem .foraddcart .addtocard:hover {
+  transition-duration: 1s;
+  background-color: orange;
+}
+.forthirdmenu .menuitem .foraddcart .addtocard:hover span {
+  color: black;
+  font-weight: 600;
+}
+
+.forshop {
+  height: 1000px;
+}
+
+footer {
+  height: 450px;
+  background-image: url(../images/section-bg-6-large-4.jpg);
+  background-size: cover;
+  padding-top: 3rem;
+  border-top: 1px solid orange;
+  text-align: center;
+}
+footer p {
+  font-size: 50px;
+  color: orange;
+  margin-bottom: 3rem;
+}
+footer .footerlogo {
+  color: white;
+  font-size: 35px;
+  border: 1px solid orange;
+  height: 52px;
+  width: 160px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+footer .footerlogo span {
+  color: orange;
+}
+footer .desc {
+  text-align: center;
+  height: 130px;
+}
+footer .desc span {
+  display: block;
+  font-size: 20px;
+  margin-top: 1rem;
+  color: white;
+}
+footer .socialmedias {
+  text-align: center;
+  margin-top: 1rem;
+  height: 130px;
+  padding-top: 2rem;
+}
+footer .socialmedias a {
+  text-decoration: none;
+}
+footer .socialmedias div {
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-bottom: 1px solid white;
+  color: white;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+footer .socialmedias div:hover {
+  top: -10px;
+  color: orange;
+  border-bottom: 1px solid orange;
+}
+footer .socialmedias div span {
+  font-size: 20px;
+}
+footer .socialmedias .instagram {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.basket {
+    padding-top: 12rem;
+    background-image: url(./assets/images/section-bg-6-large-4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/*# sourceMappingURL=main.css.map */

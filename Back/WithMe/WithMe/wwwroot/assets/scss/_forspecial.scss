@@ -1,0 +1,125 @@
+.forspecail{
+    padding-top: 150px;
+    padding-bottom: 120px;
+    background-image: url(../images/section-bg-6-large-4.jpg);
+    background-size: cover;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    .ourspecials{
+        .title{
+            h4{
+                font-family: 'Poiret One', cursive;
+                color: orange;
+                letter-spacing: 1px;
+                &:before{
+                    display: inline-block;
+                    content: "";
+                    border-top: .01rem solid orange;
+                    width: 16rem;
+                    margin: -.5rem 1rem;
+                    transform: translateY(-1rem);
+                }
+            }
+            h1{
+                color: orange;
+                font-family: 'Poiret One', cursive;
+                font-size: 50px;
+                &:before{
+                    display: inline-block;
+                    content: "";
+                    border-top: .01rem solid transparent;
+                    width: 16rem;
+                    margin: -.5rem 1rem;
+                    transform: translateY(-1rem);
+                }
+            }
+        }
+        .specialcards{
+            text-align: center;
+            padding-top: 5rem;
+            a{
+                text-decoration: none;
+            }
+            .firstcard{
+                width: 18%;
+                height: 350px;
+                border: 1px solid orange;
+                display: inline-block;
+                text-align: center;
+                padding-top: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: all 1.5s;
+                i{
+                    color: orange;
+                    font-size: 70px;
+                    margin-bottom: 30px;
+                    transition: all 1s;
+                }
+                h2{
+                    color: white;
+                    transition: all 1s;
+                }
+                p{
+                    color: orange;
+                    font-size: 18px;
+                    transition: all 1s;
+                }
+            }
+            .secondcard{
+                width: 18%;
+                height: 350px;
+                border: 1px solid orange;
+                display: inline-block;
+                margin-left: 5%;
+                margin-right: 5%;
+                text-align: center;
+                padding-top: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: all 1.5s;
+                i{
+                    color: orange;
+                    font-size: 70px;
+                    margin-bottom: 30px;
+                    transition: all 1s;
+                }
+                h2{
+                    color: white;
+                    transition: all 1s;
+                }
+                p{
+                    color: orange;
+                    font-size: 18px;
+                    transition: all 1s;
+                }
+            }
+            .thirdcard{
+                width: 18%;
+                height: 350px;
+                border: 1px solid orange;
+                display: inline-block;
+                text-align: center;
+                padding-top: 50px;
+                padding-left: 15px;
+                padding-right: 15px;
+                transition: all 1.5s;
+                i{
+                    color: orange;
+                    font-size: 70px;
+                    margin-bottom: 30px;
+                    transition: all 1s;
+                }
+                h2{
+                    color: white;
+                    transition: all 1s;
+                }
+                p{
+                    color: orange;
+                    font-size: 18px;
+                    transition: all 1s;
+                }
+            }
+        }
+    }
+}

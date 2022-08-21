@@ -1,0 +1,84 @@
+
+.forchefs{
+    height: 760px;
+    text-align: center;
+    padding-top: 12%;
+    margin-bottom: 10%;
+    .title{
+        height: 300px ;
+        h1{
+            font-size: 60px;
+            color: orange;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+    }
+    .chefsimage{
+        margin-top: -14%;
+        .firstchef{
+            width: 27%;
+            height: 440px;
+            border: 1px solid orange;
+            display: inline-block;
+            background-image: url(../images/chef.jpg);
+            background-size: cover;
+            overflow: hidden;
+        }
+        .secondchef{
+            width: 27%;
+            height: 440px;
+            border: 1px solid orange;
+            display: inline-block;
+            margin-left: 5%;
+            margin-right: 5%;
+            background-image: url(../images/cheff.jpg);
+            background-size: cover;
+        }
+        .thirdchef{
+            width: 27%;
+            height: 440px;
+            border: 1px solid orange;
+            display: inline-block;
+            background-image: url(../images/chef1.jpg);
+            background-size: cover;
+        }
+    }
+    .chefsname{
+        margin-top: 1%;
+        h2{
+            color: white;
+        }
+        h6{
+            color: orange;
+            font-size: 25px;
+        }
+        .firstchefname{
+            width: 27%;
+            display: inline-block;
+        }
+        .secondchefname{
+            width: 27%;
+            margin-left: 5%;
+            margin-right: 5%;
+            display: inline-block;
+        }
+        .thirdchefname{
+            width: 27%;
+            display: inline-block;
+        }
+    }
+}

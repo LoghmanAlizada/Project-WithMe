@@ -1,0 +1,39 @@
+﻿@model PageIntro
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<a class="btn btn-dark btn-rounded btn-fw" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Go Back</a>
+<br />
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Hero Page</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Description</th>
+                            <th>Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@Model.Title</td>
+                            <td>@Model.Description</td>
+                            <td>
+                                <a class="btn btn-success btn-icon-text" asp-area="Admin" asp-controller="Hero" asp-action="Update">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

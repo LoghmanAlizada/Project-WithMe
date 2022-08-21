@@ -1,0 +1,21 @@
+.forbetweensection{
+    background-image: url(../images/landing-img-16.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    padding-top: 8%;
+
+    .counter{
+        border-left: 1px solid orange;
+        border-right: 1px solid orange;
+        h1{
+            color: orange;
+            font-weight: bold;
+        }
+        span{
+            color: orange;
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+﻿ @model List<GalleryPage>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="gallery">
+        <div class="container">
+            <div class="title">
+                <h1 data-aos="fade-down" data-aos-duration="1500">
+                    @foreach (var item in Model)
+                   {
+                       @item.SectionTitle
+                   }
+                </h1>
+            </div>
+        </div>
+        <div class="container" id="images">
+            <div class="row">
+                @foreach (var item in Model)
+               {
+                <div class="col-3" id="image" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                    <div class="photo">
+                        <a asp-controller="ThirdMenu" asp-action="Index">
+                            <img style="border: 1px solid orange;" src="~/assets/images/@item.ImageURL" alt="">
+                        </a>
+                        <div class="shadow" data-aos="fade-down" data-aos-duration="1500">
+                            <a asp-controller="ThirdMenu" asp-action="Index"><span>Visit Menu</span></a>
+                        </div>
+                    </div>
+                </div>
+               }
+            </div>
+        </div>
+    </section>
+

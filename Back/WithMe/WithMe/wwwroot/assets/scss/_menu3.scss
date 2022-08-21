@@ -1,0 +1,144 @@
+.titleforthirdmenu{
+    text-align: center;
+    padding-top: 12%;
+    margin-bottom: 5%;
+    .title{
+        height: 300px ;
+        h1{
+            font-size: 60px;
+            color: orange;
+            &:before{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+            &:after{
+                display: inline-block;
+                content: "";
+                border-top: .01rem solid orange;
+                width: 12rem;
+                margin: 0 1rem;
+                transform: translateY(-1rem);
+            }
+        }
+        .menu{
+            border: 1px solid orange;
+            width: 10%;
+            margin-bottom: 10px;
+            &:hover{
+                background-color: orange;
+                transition-duration: 1s;
+                span{
+                    color: black;
+                    font-weight: 600;
+                }
+            }
+            a{
+                text-decoration: none;
+                span{
+                    color: orange;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.forthirdmenu{
+    .maincourse{
+        margin-top: -10rem;
+    }
+    .desserts{
+        margin-top: 10rem;
+    }
+    .drinks{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .title{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        h1{
+            color: black;
+            font-weight: 600;
+            width: 20%;
+            border: 1px solid orange;
+            background-color: orange;
+        }
+    }
+    .menuitem{
+        height: 426px;
+        border-bottom: 1px solid white;
+        margin-top: 3rem;
+        &:hover{
+            border-bottom: 1px solid orange;
+            .forimage{
+                img{
+                    transform: scale(1.2);
+                    transition: all 1s;
+                }
+            }
+        }
+        .forimage{
+            height: 254px;
+            width: 254px;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 50%;
+            img{
+                max-width: 100%;
+                transition: all 1s;
+                border-radius: 50%;
+            }
+        }
+        .forname{
+            width: 304px;
+            height: 40px;
+            text-align: center;
+            span{
+                font-size: 25px;
+                color: orange;
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+        }
+        .forcost{
+            width: 304px;
+            height: 40px;
+            text-align: center;
+            span{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        .foraddcart{
+            width: 304px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            .addtocard{
+                border: 1px solid orange;
+                width: 130px;
+                height: 40px;
+                text-align: center;
+                cursor: pointer;
+                span{
+                    color: white;
+                    font-size: 20px;
+                }
+                
+                &:hover{
+                    transition-duration: 1s;
+                    background-color: orange;
+                    span{
+                        color: black;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

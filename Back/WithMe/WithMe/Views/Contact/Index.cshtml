@@ -1,0 +1,36 @@
+﻿@model ContactVM
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<section class="forcontact">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000">
+            <h1>@Model.contactpage.SectionTitle</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="leftdiv" data-aos="fade-right" data-aos-duration="1000">
+                        <h1>@Model.contactpage.CartTitle</h1>
+                        <span>@Model.contactpage.Location</span>
+                        <span>@Model.contactpage.Mail</span>
+                        <h1>@Model.contactpage.TitleForHour</h1>
+                        <span>@Model.contactpage.WeekTime</span>
+                        <span>@Model.contactpage.WeekendTime</span>
+                        <h1>Follow Us</h1>
+                        @foreach (var item in Model.socialmediaaccount)
+                    {
+                        <a href="@item.Link">@item.Name</a>
+                    }
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="rightdiv"  data-aos="fade-left" data-aos-duration="1000">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059405222!2d-74.25986585394212!3d40.69714941842808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1658520477609!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+

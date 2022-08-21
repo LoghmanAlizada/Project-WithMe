@@ -1,0 +1,62 @@
+﻿@model IEnumerable<BasketProduct>
+
+@{
+    ViewData["Title"] = "Basket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int count = 0;
+}
+
+<div style=" background-color: black;">
+    @if (Model.Count() > 0)
+    {
+        <div class="container" style=" width: 100%; padding-top: 12rem; background-color: black; ">
+            <div class="row">
+                <table class="table" style="background-color: black; color: white;">
+                    <thead>
+                        <tr>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">#</th>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">Photo</th>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">Name</th>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">Count</th>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">Price</th>
+                            <th style=" font-size: 25px; letter-spacing: 2px;" scope="col">Settings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            count++;
+                            <tr>
+                                <th style=" font-size: 25px; letter-spacing: 2px; padding-top: 4rem; color: yellow;" scope="row">@count</th>
+                                <td><img width="150px" height="150px" style=" border: 2px solid orange; border-radius: 50%;" src="~/assets/images/@item.ImageURL" /></td>
+                                <td style=" font-size: 25px; letter-spacing: 2px; padding-top: 4rem; color: yellow;">@item.Name</td>
+                                <td style=" font-size: 25px; letter-spacing: 2px; padding-top: 4rem; color: yellow;">
+                                    <a style="text-decoration: none; color: orange;" asp-controller="Basket" asp-action="Minus" asp-route-id="@item.Id">- </a>
+                                    @item.Count
+                                    <a style="text-decoration: none; color: orange;" asp-controller="Basket" asp-action="Plus" asp-route-id="@item.Id"> +</a>
+                                </td>
+                                <td style=" font-size: 25px; letter-spacing: 2px; padding-top: 4rem; color: yellow;">@(@item.Price * @item.Count)$</td>
+                                <td style=" font-size: 25px; letter-spacing: 2px; padding-top: 4rem; color: yellow;">
+                                    <button type="button" class="btn btn-warning">
+                                        <a style="text-decoration: none; color: black" asp-controller="Basket" asp-action="RemoveItem" asp-route-id="@item.Id"><b>Remove</b></a>
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="container" style="height: 422px; padding-top: 17rem;">
+            <div style="background-color: orange; width: 200px; height: 45px; display: flex; justify-content: center; margin: auto;">
+                <a style="text-decoration: none; color: black; font-size: 30px;" asp-controller="ThirdMenu" asp-action="Index">
+                    <b>Go Menu</b>
+                </a>
+            </div>
+        </div>
+    }
+</div>
+
