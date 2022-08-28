@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WithMe.DAL;
 using WithMe.Models;
+using WithMe.ViewModels;
 
 namespace WithMe.Areas.Admin.Controllers
 {
@@ -21,12 +22,20 @@ namespace WithMe.Areas.Admin.Controllers
             _env = env;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int take = 5, int pageSize = 1)
         {
-            List<GalleryPage> dbGallery = _context.GalleryPages.ToList();
-            return View(dbGallery);
-        }
+            ViewBag.takeSize = take;
+            List<GalleryPage> dbGallery = _context.GalleryPages.Skip((pageSize - 1) * take).Take(take).ToList();
+            Pagination<GalleryPage> pagination = new Pagination<GalleryPage>
+            (
+                ReturnPageCount(take),
+                pageSize,
+                dbGallery
+            );
 
+            return View(pagination);
+        }
+    
         public IActionResult Create()
         {
             return View();
@@ -76,6 +85,12 @@ namespace WithMe.Areas.Admin.Controllers
             _context.GalleryPages.Remove(dbGallery);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Gallery");
+        }
+
+        private int ReturnPageCount(int take)
+        {
+            int galleryCount = _context.GalleryPages.Count();
+            return (int)Math.Ceiling((decimal)galleryCount / take) + 1;
         }
     }
 }

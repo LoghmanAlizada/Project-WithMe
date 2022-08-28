@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WithMe.DAL;
 using WithMe.Models;
+using WithMe.ViewModels;
 
 namespace WithMe.Areas.Admin.Controllers
 {
@@ -21,10 +22,18 @@ namespace WithMe.Areas.Admin.Controllers
             _env = env;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int take = 5, int pageSize = 1)
         {
-            List<DessertsSectionForThirdMenu> dbDesserts = _context.DessertsSectionForThirdMenus.ToList();
-            return View(dbDesserts);
+            ViewBag.takeSize2 = take;
+            List<DessertsSectionForThirdMenu> dbDesserts = _context.DessertsSectionForThirdMenus.Skip((pageSize - 1) * take).Take(take).ToList();
+            Pagination<DessertsSectionForThirdMenu> pagination = new Pagination<DessertsSectionForThirdMenu>
+            (
+                ReturnPageCount(take),
+                pageSize,
+                dbDesserts
+            );
+
+            return View(pagination);
         }
 
         public IActionResult Create()
@@ -126,6 +135,12 @@ namespace WithMe.Areas.Admin.Controllers
             _context.DessertsSectionForThirdMenus.Remove(dbDessert);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index", "Desserts");
+        }
+
+        private int ReturnPageCount(int take)
+        {
+            int menuCount = _context.DessertsSectionForThirdMenus.Count();
+            return (int)Math.Ceiling((decimal)menuCount / take) + 1;
         }
     }
 }

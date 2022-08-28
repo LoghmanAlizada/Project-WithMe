@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\Desktop\\Restaurant\\Back\\WithMe\\WithMe\\WithMe.csproj": {}
+    "C:\\Users\\USER\\Desktop\\WithMe\\Back\\WithMe\\WithMe\\WithMe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\Desktop\\Restaurant\\Back\\WithMe\\WithMe\\WithMe.csproj": {
+    "C:\\Users\\USER\\Desktop\\WithMe\\Back\\WithMe\\WithMe\\WithMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\Desktop\\Restaurant\\Back\\WithMe\\WithMe\\WithMe.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\Desktop\\WithMe\\Back\\WithMe\\WithMe\\WithMe.csproj",
         "projectName": "WithMe",
-        "projectPath": "C:\\Users\\USER\\Desktop\\Restaurant\\Back\\WithMe\\WithMe\\WithMe.csproj",
+        "projectPath": "C:\\Users\\USER\\Desktop\\WithMe\\Back\\WithMe\\WithMe\\WithMe.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\Desktop\\Restaurant\\Back\\WithMe\\WithMe\\obj\\",
+        "outputPath": "C:\\Users\\USER\\Desktop\\WithMe\\Back\\WithMe\\WithMe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
